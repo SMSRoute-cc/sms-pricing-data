@@ -1,0 +1,41 @@
+country,iso2,price_usd_per_sms,route_type,carriers,indicative_median_submission_ms,indicative_success_rate_pct
+Morocco,MA,0.035,direct,Maroc Telecom; Orange Maroc,95,98.6
+United States,US,0.008,premium,AT&T; Verizon; T-Mobile,87,99.1
+United Kingdom,GB,0.038,premium,EE; Vodafone; O2,91,99.0
+Canada,CA,0.015,direct,Rogers; Bell; Telus,89,98.9
+Australia,AU,0.028,direct,Telstra; Optus; Vodafone,93,98.8
+Germany,DE,0.085,premium,Deutsche Telekom; Vodafone; O2,84,99.2
+France,FR,0.075,premium,Orange; SFR; Bouygues Telecom,86,99.0
+Spain,ES,0.042,direct,Movistar; Vodafone; Orange,88,98.7
+Italy,IT,0.048,direct,TIM; Vodafone; Wind Tre,90,98.6
+Netherlands,NL,0.055,direct,KPN; Vodafone; T-Mobile,83,99.1
+Poland,PL,0.032,direct,Orange; Play; T-Mobile,92,98.4
+Ukraine,UA,0.025,wholesale,Kyivstar; Vodafone; lifecell,108,97.2
+Russia,RU,0.022,wholesale,MTS; Beeline; MegaFon,112,96.8
+Turkey,TR,0.02,direct,Turkcell; Vodafone; Türk Telekom,105,97.5
+United Arab Emirates,AE,0.045,premium,Etisalat; du,82,99.0
+Saudi Arabia,SA,0.05,premium,STC; Mobily; Zain,85,98.9
+Egypt,EG,0.018,direct,Orange; Vodafone; Etisalat,110,97.8
+Nigeria,NG,0.016,direct,MTN; Airtel; Glo,115,97.0
+Kenya,KE,0.014,direct,Safaricom; Airtel; Telkom,118,96.9
+South Africa,ZA,0.024,direct,Vodacom; MTN; Cell C,98,98.2
+Ghana,GH,0.019,direct,MTN; Vodafone; AirtelTigo,120,96.7
+India,IN,0.012,direct,Jio; Airtel; Vi,102,98.0
+Pakistan,PK,0.011,wholesale,Jazz; Zong; Telenor,125,96.5
+Bangladesh,BD,0.013,wholesale,Grameenphone; Robi; Banglalink,128,96.4
+Sri Lanka,LK,0.017,direct,Dialog; Mobitel; Airtel,122,96.8
+Vietnam,VN,0.015,wholesale,Viettel; Mobifone; Vinaphone,126,96.6
+Thailand,TH,0.021,direct,AIS; TrueMove; dtac,103,97.9
+Indonesia,ID,0.023,direct,Telkomsel; Indosat; XL Axiata,107,97.6
+Philippines,PH,0.026,direct,Globe; Smart; DITO,109,97.4
+Malaysia,MY,0.027,direct,Maxis; Celcom; Digi,96,98.3
+Singapore,SG,0.03,direct,Singtel; StarHub; M1,86,99.0
+Japan,JP,0.065,direct,NTT Docomo; KDDI; SoftBank,94,98.9
+South Korea,KR,0.06,direct,SK Telecom; KT; LG U+,88,99.1
+Brazil,BR,0.018,direct,Vivo; Claro; TIM,104,98.1
+Mexico,MX,0.02,direct,Telcel; Movistar; AT&T,100,98.0
+Argentina,AR,0.029,direct,Claro; Movistar; Personal,106,97.7
+Colombia,CO,0.022,direct,Claro; Movistar; Tigo,101,97.9
+Chile,CL,0.025,direct,Movistar; Claro; Entel,97,98.2
+Peru,PE,0.024,direct,Claro; Movistar; Entel,99,98.0
+Israel,IL,0.035,direct,Cellcom; Partner; Pelephone,92,98.5
