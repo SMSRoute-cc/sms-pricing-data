@@ -1,0 +1,531 @@
+{
+ "version": "2026.07",
+ "generated": "2026-07-06",
+ "license": "CC-BY-4.0",
+ "source": "smsroute.cc",
+ "schema": {
+  "price_usd_per_sms": "published route rate (USD/SMS)",
+  "route_type": "direct|premium|wholesale",
+  "indicative_*": "operator telemetry, indicative not independently audited"
+ },
+ "routes": [
+  {
+   "country": "Morocco",
+   "iso2": "MA",
+   "price_usd": 0.035,
+   "carriers": [
+    "Maroc Telecom",
+    "Orange Maroc"
+   ],
+   "median_submission_ms": 95,
+   "success_rate_pct": 98.6,
+   "route_type": "direct"
+  },
+  {
+   "country": "United States",
+   "iso2": "US",
+   "price_usd": 0.008,
+   "carriers": [
+    "AT&T",
+    "Verizon",
+    "T-Mobile"
+   ],
+   "median_submission_ms": 87,
+   "success_rate_pct": 99.1,
+   "route_type": "premium"
+  },
+  {
+   "country": "United Kingdom",
+   "iso2": "GB",
+   "price_usd": 0.038,
+   "carriers": [
+    "EE",
+    "Vodafone",
+    "O2"
+   ],
+   "median_submission_ms": 91,
+   "success_rate_pct": 99.0,
+   "route_type": "premium"
+  },
+  {
+   "country": "Canada",
+   "iso2": "CA",
+   "price_usd": 0.015,
+   "carriers": [
+    "Rogers",
+    "Bell",
+    "Telus"
+   ],
+   "median_submission_ms": 89,
+   "success_rate_pct": 98.9,
+   "route_type": "direct"
+  },
+  {
+   "country": "Australia",
+   "iso2": "AU",
+   "price_usd": 0.028,
+   "carriers": [
+    "Telstra",
+    "Optus",
+    "Vodafone"
+   ],
+   "median_submission_ms": 93,
+   "success_rate_pct": 98.8,
+   "route_type": "direct"
+  },
+  {
+   "country": "Germany",
+   "iso2": "DE",
+   "price_usd": 0.085,
+   "carriers": [
+    "Deutsche Telekom",
+    "Vodafone",
+    "O2"
+   ],
+   "median_submission_ms": 84,
+   "success_rate_pct": 99.2,
+   "route_type": "premium"
+  },
+  {
+   "country": "France",
+   "iso2": "FR",
+   "price_usd": 0.075,
+   "carriers": [
+    "Orange",
+    "SFR",
+    "Bouygues Telecom"
+   ],
+   "median_submission_ms": 86,
+   "success_rate_pct": 99.0,
+   "route_type": "premium"
+  },
+  {
+   "country": "Spain",
+   "iso2": "ES",
+   "price_usd": 0.042,
+   "carriers": [
+    "Movistar",
+    "Vodafone",
+    "Orange"
+   ],
+   "median_submission_ms": 88,
+   "success_rate_pct": 98.7,
+   "route_type": "direct"
+  },
+  {
+   "country": "Italy",
+   "iso2": "IT",
+   "price_usd": 0.048,
+   "carriers": [
+    "TIM",
+    "Vodafone",
+    "Wind Tre"
+   ],
+   "median_submission_ms": 90,
+   "success_rate_pct": 98.6,
+   "route_type": "direct"
+  },
+  {
+   "country": "Netherlands",
+   "iso2": "NL",
+   "price_usd": 0.055,
+   "carriers": [
+    "KPN",
+    "Vodafone",
+    "T-Mobile"
+   ],
+   "median_submission_ms": 83,
+   "success_rate_pct": 99.1,
+   "route_type": "direct"
+  },
+  {
+   "country": "Poland",
+   "iso2": "PL",
+   "price_usd": 0.032,
+   "carriers": [
+    "Orange",
+    "Play",
+    "T-Mobile"
+   ],
+   "median_submission_ms": 92,
+   "success_rate_pct": 98.4,
+   "route_type": "direct"
+  },
+  {
+   "country": "Ukraine",
+   "iso2": "UA",
+   "price_usd": 0.025,
+   "carriers": [
+    "Kyivstar",
+    "Vodafone",
+    "lifecell"
+   ],
+   "median_submission_ms": 108,
+   "success_rate_pct": 97.2,
+   "route_type": "wholesale"
+  },
+  {
+   "country": "Russia",
+   "iso2": "RU",
+   "price_usd": 0.022,
+   "carriers": [
+    "MTS",
+    "Beeline",
+    "MegaFon"
+   ],
+   "median_submission_ms": 112,
+   "success_rate_pct": 96.8,
+   "route_type": "wholesale"
+  },
+  {
+   "country": "Turkey",
+   "iso2": "TR",
+   "price_usd": 0.02,
+   "carriers": [
+    "Turkcell",
+    "Vodafone",
+    "T\u00fcrk Telekom"
+   ],
+   "median_submission_ms": 105,
+   "success_rate_pct": 97.5,
+   "route_type": "direct"
+  },
+  {
+   "country": "United Arab Emirates",
+   "iso2": "AE",
+   "price_usd": 0.045,
+   "carriers": [
+    "Etisalat",
+    "du"
+   ],
+   "median_submission_ms": 82,
+   "success_rate_pct": 99.0,
+   "route_type": "premium"
+  },
+  {
+   "country": "Saudi Arabia",
+   "iso2": "SA",
+   "price_usd": 0.05,
+   "carriers": [
+    "STC",
+    "Mobily",
+    "Zain"
+   ],
+   "median_submission_ms": 85,
+   "success_rate_pct": 98.9,
+   "route_type": "premium"
+  },
+  {
+   "country": "Egypt",
+   "iso2": "EG",
+   "price_usd": 0.018,
+   "carriers": [
+    "Orange",
+    "Vodafone",
+    "Etisalat"
+   ],
+   "median_submission_ms": 110,
+   "success_rate_pct": 97.8,
+   "route_type": "direct"
+  },
+  {
+   "country": "Nigeria",
+   "iso2": "NG",
+   "price_usd": 0.016,
+   "carriers": [
+    "MTN",
+    "Airtel",
+    "Glo"
+   ],
+   "median_submission_ms": 115,
+   "success_rate_pct": 97.0,
+   "route_type": "direct"
+  },
+  {
+   "country": "Kenya",
+   "iso2": "KE",
+   "price_usd": 0.014,
+   "carriers": [
+    "Safaricom",
+    "Airtel",
+    "Telkom"
+   ],
+   "median_submission_ms": 118,
+   "success_rate_pct": 96.9,
+   "route_type": "direct"
+  },
+  {
+   "country": "South Africa",
+   "iso2": "ZA",
+   "price_usd": 0.024,
+   "carriers": [
+    "Vodacom",
+    "MTN",
+    "Cell C"
+   ],
+   "median_submission_ms": 98,
+   "success_rate_pct": 98.2,
+   "route_type": "direct"
+  },
+  {
+   "country": "Ghana",
+   "iso2": "GH",
+   "price_usd": 0.019,
+   "carriers": [
+    "MTN",
+    "Vodafone",
+    "AirtelTigo"
+   ],
+   "median_submission_ms": 120,
+   "success_rate_pct": 96.7,
+   "route_type": "direct"
+  },
+  {
+   "country": "India",
+   "iso2": "IN",
+   "price_usd": 0.012,
+   "carriers": [
+    "Jio",
+    "Airtel",
+    "Vi"
+   ],
+   "median_submission_ms": 102,
+   "success_rate_pct": 98.0,
+   "route_type": "direct"
+  },
+  {
+   "country": "Pakistan",
+   "iso2": "PK",
+   "price_usd": 0.011,
+   "carriers": [
+    "Jazz",
+    "Zong",
+    "Telenor"
+   ],
+   "median_submission_ms": 125,
+   "success_rate_pct": 96.5,
+   "route_type": "wholesale"
+  },
+  {
+   "country": "Bangladesh",
+   "iso2": "BD",
+   "price_usd": 0.013,
+   "carriers": [
+    "Grameenphone",
+    "Robi",
+    "Banglalink"
+   ],
+   "median_submission_ms": 128,
+   "success_rate_pct": 96.4,
+   "route_type": "wholesale"
+  },
+  {
+   "country": "Sri Lanka",
+   "iso2": "LK",
+   "price_usd": 0.017,
+   "carriers": [
+    "Dialog",
+    "Mobitel",
+    "Airtel"
+   ],
+   "median_submission_ms": 122,
+   "success_rate_pct": 96.8,
+   "route_type": "direct"
+  },
+  {
+   "country": "Vietnam",
+   "iso2": "VN",
+   "price_usd": 0.015,
+   "carriers": [
+    "Viettel",
+    "Mobifone",
+    "Vinaphone"
+   ],
+   "median_submission_ms": 126,
+   "success_rate_pct": 96.6,
+   "route_type": "wholesale"
+  },
+  {
+   "country": "Thailand",
+   "iso2": "TH",
+   "price_usd": 0.021,
+   "carriers": [
+    "AIS",
+    "TrueMove",
+    "dtac"
+   ],
+   "median_submission_ms": 103,
+   "success_rate_pct": 97.9,
+   "route_type": "direct"
+  },
+  {
+   "country": "Indonesia",
+   "iso2": "ID",
+   "price_usd": 0.023,
+   "carriers": [
+    "Telkomsel",
+    "Indosat",
+    "XL Axiata"
+   ],
+   "median_submission_ms": 107,
+   "success_rate_pct": 97.6,
+   "route_type": "direct"
+  },
+  {
+   "country": "Philippines",
+   "iso2": "PH",
+   "price_usd": 0.026,
+   "carriers": [
+    "Globe",
+    "Smart",
+    "DITO"
+   ],
+   "median_submission_ms": 109,
+   "success_rate_pct": 97.4,
+   "route_type": "direct"
+  },
+  {
+   "country": "Malaysia",
+   "iso2": "MY",
+   "price_usd": 0.027,
+   "carriers": [
+    "Maxis",
+    "Celcom",
+    "Digi"
+   ],
+   "median_submission_ms": 96,
+   "success_rate_pct": 98.3,
+   "route_type": "direct"
+  },
+  {
+   "country": "Singapore",
+   "iso2": "SG",
+   "price_usd": 0.03,
+   "carriers": [
+    "Singtel",
+    "StarHub",
+    "M1"
+   ],
+   "median_submission_ms": 86,
+   "success_rate_pct": 99.0,
+   "route_type": "direct"
+  },
+  {
+   "country": "Japan",
+   "iso2": "JP",
+   "price_usd": 0.065,
+   "carriers": [
+    "NTT Docomo",
+    "KDDI",
+    "SoftBank"
+   ],
+   "median_submission_ms": 94,
+   "success_rate_pct": 98.9,
+   "route_type": "direct"
+  },
+  {
+   "country": "South Korea",
+   "iso2": "KR",
+   "price_usd": 0.06,
+   "carriers": [
+    "SK Telecom",
+    "KT",
+    "LG U+"
+   ],
+   "median_submission_ms": 88,
+   "success_rate_pct": 99.1,
+   "route_type": "direct"
+  },
+  {
+   "country": "Brazil",
+   "iso2": "BR",
+   "price_usd": 0.018,
+   "carriers": [
+    "Vivo",
+    "Claro",
+    "TIM"
+   ],
+   "median_submission_ms": 104,
+   "success_rate_pct": 98.1,
+   "route_type": "direct"
+  },
+  {
+   "country": "Mexico",
+   "iso2": "MX",
+   "price_usd": 0.02,
+   "carriers": [
+    "Telcel",
+    "Movistar",
+    "AT&T"
+   ],
+   "median_submission_ms": 100,
+   "success_rate_pct": 98.0,
+   "route_type": "direct"
+  },
+  {
+   "country": "Argentina",
+   "iso2": "AR",
+   "price_usd": 0.029,
+   "carriers": [
+    "Claro",
+    "Movistar",
+    "Personal"
+   ],
+   "median_submission_ms": 106,
+   "success_rate_pct": 97.7,
+   "route_type": "direct"
+  },
+  {
+   "country": "Colombia",
+   "iso2": "CO",
+   "price_usd": 0.022,
+   "carriers": [
+    "Claro",
+    "Movistar",
+    "Tigo"
+   ],
+   "median_submission_ms": 101,
+   "success_rate_pct": 97.9,
+   "route_type": "direct"
+  },
+  {
+   "country": "Chile",
+   "iso2": "CL",
+   "price_usd": 0.025,
+   "carriers": [
+    "Movistar",
+    "Claro",
+    "Entel"
+   ],
+   "median_submission_ms": 97,
+   "success_rate_pct": 98.2,
+   "route_type": "direct"
+  },
+  {
+   "country": "Peru",
+   "iso2": "PE",
+   "price_usd": 0.024,
+   "carriers": [
+    "Claro",
+    "Movistar",
+    "Entel"
+   ],
+   "median_submission_ms": 99,
+   "success_rate_pct": 98.0,
+   "route_type": "direct"
+  },
+  {
+   "country": "Israel",
+   "iso2": "IL",
+   "price_usd": 0.035,
+   "carriers": [
+    "Cellcom",
+    "Partner",
+    "Pelephone"
+   ],
+   "median_submission_ms": 92,
+   "success_rate_pct": 98.5,
+   "route_type": "direct"
+  }
+ ]
+}
