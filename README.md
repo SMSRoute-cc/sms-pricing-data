@@ -1,56 +1,98 @@
-# Open SMS Pricing Dataset (2026)
+# Open SMS Pricing Dataset
 
-Machine-readable SMS termination pricing, carrier routes, and delivery metrics for 40 countries. Published by [smsroute.cc](https://smsroute.cc) from live route data.
+Machine-readable international SMS termination pricing for 149 countries, updated quarterly from live route data. Published by [SMSRoute](https://smsroute.cc) — a no-KYC SMS API with crypto billing.
 
-**Files**: [`sms_routes.json`](sms_routes.json) — one record per country: price (USD), direct carrier list, median submission latency (ms), delivered success rate (%), route type.
+## Dataset Contents
 
-Use it for cost models, market research, or benchmarks. Interactive version: [SMS cost calculator](https://smsroute.cc/tools/sms-cost-calculator).
+**File:** [`sms_routes.json`](sms_routes.json) — one record per country with the following fields:
 
-| Country | ISO | $/SMS | Carriers | Median ms | Success % | Route |
-|---|---|---|---|---|---|---|
-| Argentina | AR | 0.029 | Claro, Movistar, Personal | 106 | 97.7 | direct |
-| Australia | AU | 0.028 | Telstra, Optus, Vodafone | 93 | 98.8 | direct |
-| Bangladesh | BD | 0.013 | Grameenphone, Robi, Banglalink | 128 | 96.4 | wholesale |
-| Brazil | BR | 0.018 | Vivo, Claro, TIM | 104 | 98.1 | direct |
-| Canada | CA | 0.015 | Rogers, Bell, Telus | 89 | 98.9 | direct |
-| Chile | CL | 0.025 | Movistar, Claro, Entel | 97 | 98.2 | direct |
-| Colombia | CO | 0.022 | Claro, Movistar, Tigo | 101 | 97.9 | direct |
-| Egypt | EG | 0.018 | Orange, Vodafone, Etisalat | 110 | 97.8 | direct |
-| France | FR | 0.075 | Orange, SFR, Bouygues Telecom | 86 | 99.0 | premium |
-| Germany | DE | 0.085 | Deutsche Telekom, Vodafone, O2 | 84 | 99.2 | premium |
-| Ghana | GH | 0.019 | MTN, Vodafone, AirtelTigo | 120 | 96.7 | direct |
-| India | IN | 0.012 | Jio, Airtel, Vi | 102 | 98.0 | direct |
-| Indonesia | ID | 0.023 | Telkomsel, Indosat, XL Axiata | 107 | 97.6 | direct |
-| Israel | IL | 0.035 | Cellcom, Partner, Pelephone | 92 | 98.5 | direct |
-| Italy | IT | 0.048 | TIM, Vodafone, Wind Tre | 90 | 98.6 | direct |
-| Japan | JP | 0.065 | NTT Docomo, KDDI, SoftBank | 94 | 98.9 | direct |
-| Kenya | KE | 0.014 | Safaricom, Airtel, Telkom | 118 | 96.9 | direct |
-| Malaysia | MY | 0.027 | Maxis, Celcom, Digi | 96 | 98.3 | direct |
-| Mexico | MX | 0.02 | Telcel, Movistar, AT&T | 100 | 98.0 | direct |
-| Morocco | MA | 0.035 | Maroc Telecom, Orange Maroc | 95 | 98.6 | direct |
-| Netherlands | NL | 0.055 | KPN, Vodafone, T-Mobile | 83 | 99.1 | direct |
-| Nigeria | NG | 0.016 | MTN, Airtel, Glo | 115 | 97.0 | direct |
-| Pakistan | PK | 0.011 | Jazz, Zong, Telenor | 125 | 96.5 | wholesale |
-| Peru | PE | 0.024 | Claro, Movistar, Entel | 99 | 98.0 | direct |
-| Philippines | PH | 0.026 | Globe, Smart, DITO | 109 | 97.4 | direct |
-| Poland | PL | 0.032 | Orange, Play, T-Mobile | 92 | 98.4 | direct |
-| Russia | RU | 0.022 | MTS, Beeline, MegaFon | 112 | 96.8 | wholesale |
-| Saudi Arabia | SA | 0.05 | STC, Mobily, Zain | 85 | 98.9 | premium |
-| Singapore | SG | 0.03 | Singtel, StarHub, M1 | 86 | 99.0 | direct |
-| South Africa | ZA | 0.024 | Vodacom, MTN, Cell C | 98 | 98.2 | direct |
-| South Korea | KR | 0.06 | SK Telecom, KT, LG U+ | 88 | 99.1 | direct |
-| Spain | ES | 0.042 | Movistar, Vodafone, Orange | 88 | 98.7 | direct |
-| Sri Lanka | LK | 0.017 | Dialog, Mobitel, Airtel | 122 | 96.8 | direct |
-| Thailand | TH | 0.021 | AIS, TrueMove, dtac | 103 | 97.9 | direct |
-| Turkey | TR | 0.02 | Turkcell, Vodafone, Türk Telekom | 105 | 97.5 | direct |
-| Ukraine | UA | 0.025 | Kyivstar, Vodafone, lifecell | 108 | 97.2 | wholesale |
-| United Arab Emirates | AE | 0.045 | Etisalat, du | 82 | 99.0 | premium |
-| United Kingdom | GB | 0.038 | EE, Vodafone, O2 | 91 | 99.0 | premium |
-| United States | US | 0.008 | AT&T, Verizon, T-Mobile | 87 | 99.1 | premium |
-| Vietnam | VN | 0.015 | Viettel, Mobifone, Vinaphone | 126 | 96.6 | wholesale |
+| Column | Type | Description |
+|--------|------|-------------|
+| `country` | string | Country name |
+| `iso` | string | ISO 3166-1 alpha-2 code |
+| `price_usd` | float | Cost per SMS in USD |
+| `carriers` | array | Direct carrier connections |
+| `median_latency_ms` | int | Median submission-to-delivery time |
+| `success_rate_pct` | float | Delivery success rate (measured) |
+| `route_type` | string | `direct`, `wholesale`, or `premium` |
 
-## Method & caveats
-Prices are smsroute.cc published rates on international direct/wholesale routes, sampled 2026. Domestic registered routes (DLT/10DLC/etc.) price differently. Success rates are measured on tier-1 direct-carrier deliveries; no provider can promise 100%.
+Full 149-country dataset is available in the [repository](https://github.com/SMSRoute-cc/sms-pricing-data) as `sms_routes.json`.
+
+## Pricing
+
+SMSRoute offers international SMS from **$0.004/message** (premium corridors up to $0.035). Pricing is published transparently at [smsroute.cc/prices/](https://smsroute.cc/prices/). The API accepts crypto payments with automatic top-up confirmation — see [smsroute.cc/crypto-payments/](https://smsroute.cc/crypto-payments/) for supported currencies.
+
+No-KYC signup (email only), no contracts or minimums, and real-time DLR webhooks. Competitors like Twilio, Vonage, and Plivo require identity plus business verification, card billing, and 10DLC/DLT registration.
+
+## Why This Dataset Exists
+
+Most SMS pricing data is locked behind signup forms or outdated. This dataset provides:
+
+- **Real, current pricing** from live route data (not estimates)
+- **Per-country breakdown** with carrier-level detail
+- **Performance metrics** (latency, success rate) for cost modeling
+- **Route type classification** (direct vs wholesale vs premium)
+
+Use it for:
+- Building cost calculators
+- Market research and competitor analysis
+- Budgeting for international SMS campaigns
+- Academic research on telecommunications pricing
+
+## How to Use
+
+### Direct download
+```bash
+curl -O https://github.com/SMSRoute-cc/sms-pricing-data/raw/main/sms_routes.json
+```
+
+### Python example
+```python
+import json
+
+with open('sms_routes.json') as f:
+    data = json.load(f)
+
+# Find cheapest routes
+cheapest = sorted(data, key=lambda x: x['price_usd'])[:5]
+for route in cheapest:
+    print(f"{route['country']}: ${route['price_usd']}/SMS")
+```
+
+### Interactive tool
+Use the [SMS cost calculator](https://smsroute.cc/prices/) to estimate costs for specific volumes and countries.
+
+## Methodology & Caveats
+
+- **Source:** SMSRoute's published rates on international direct/wholesale routes, sampled from current live data
+- **Update cadence:** Quarterly
+- **Success rates:** Measured on tier-1 direct-carrier deliveries; no provider can guarantee 100%
+- **Domestic routes:** Prices shown are for international sending. Domestic registered routes (DLT/10DLC/etc.) may differ
+- **Premium routes:** Higher cost, higher reliability (typically 99%+ success rate)
+
+## Related Resources
+
+- [SMSRoute API documentation](https://smsroute.cc/api/)
+- [No-KYC SMS API guide](https://smsroute-cc.github.io/best-no-kyc-sms-api.html)
+- [Cheapest international bulk SMS API](https://smsroute-cc.github.io/cheapest-international-bulk-sms-api.html)
+- [SMS API accepting Bitcoin/Crypto](https://smsroute-cc.github.io/sms-api-accepts-bitcoin-crypto.html)
+- [Twilio alternative without business verification](https://smsroute-cc.github.io/twilio-alternative-no-business-verification.html)
+- [Vonage/Plivo alternative without vetting](https://smsroute-cc.github.io/vonage-plivo-alternative-no-vetting.html)
+- [Anonymous SMS API for developers](https://smsroute-cc.github.io/anonymous-sms-api-for-developers.html)
+- [Pay SMS API with USDT](https://smsroute-cc.github.io/pay-sms-api-with-usdt.html)
+- [SMS API accepting Monero (XMR)](https://smsroute-cc.github.io/sms-api-monero-xmr.html)
+- [SMSRoute GitHub examples](https://github.com/SMSRoute-cc/smsroute-examples)
+- [Awesome SMS Privacy](https://github.com/SMSRoute-cc/awesome-sms-privacy)
+
+## Citation
+
+If you use this dataset in research or publications, please cite:
+
+```
+SMSRoute. Open SMS Pricing Dataset (Version 2026.1) [Data set]. 
+https://github.com/SMSRoute-cc/sms-pricing-data
+```
 
 ## License
-CC BY 4.0 — use freely with attribution to smsroute.cc.
+
+CC BY 4.0 — use freely with attribution to [smsroute.cc](https://smsroute.cc).
