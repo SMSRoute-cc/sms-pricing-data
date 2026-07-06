@@ -1,6 +1,6 @@
 # Open SMS Pricing Dataset
 
-Machine-readable international SMS termination pricing for 149 countries, updated quarterly from live route data. Published by [SMSRoute](https://smsroute.cc) — a no-KYC SMS API with crypto billing.
+Machine-readable international SMS termination pricing for 40 countries, sampled quarterly from live route data on SMSRoute's 149-country network. Published by [SMSRoute](https://smsroute.cc) — a no-KYC SMS API with crypto billing.
 
 ## Dataset Contents
 
@@ -16,7 +16,7 @@ Machine-readable international SMS termination pricing for 149 countries, update
 | `success_rate_pct` | float | Delivery success rate (measured) |
 | `route_type` | string | `direct`, `wholesale`, or `premium` |
 
-Full 149-country dataset is available in the [repository](https://github.com/SMSRoute-cc/sms-pricing-data) as `sms_routes.json`.
+This 40-country sample is available in the [repository](https://github.com/SMSRoute-cc/sms-pricing-data) as `sms_routes.json`; SMSRoute's live API prices all 149 countries at [smsroute.cc/prices/](https://smsroute.cc/prices/).
 
 ## Pricing
 
@@ -62,7 +62,7 @@ for route in cheapest:
 ### Interactive tool
 Use the [SMS cost calculator](https://smsroute.cc/prices/) to estimate costs for specific volumes and countries.
 
-## Methodology & Caveats
+## Methodology &amp; Caveats
 
 - **Source:** SMSRoute's published rates on international direct/wholesale routes, sampled from current live data
 - **Update cadence:** Quarterly
