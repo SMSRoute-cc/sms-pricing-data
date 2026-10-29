@@ -1,34 +1,49 @@
-# Global SMS Pricing Dataset (2026.07)
+# Global SMS pricing dataset (2026-10)
 
-Open, machine-readable pricing for sending SMS across 40 international routes — the kind
-of data normally locked inside carrier contracts. Published by [smsroute.cc](https://sendsmsnokyc.com)
-under CC-BY-4.0, refreshed monthly.
+Open, machine-readable prices for sending one SMS across international routes — the data normally
+buried in carrier contracts. Published under CC-BY-4.0, refreshed monthly.
 
-**Why it exists:** "how much does it cost to send an SMS to <country>" has no honest open answer.
-This is that answer, versioned and citable.
+**Why it exists:** "how much does it cost to send an SMS to <country>" has no honest open answer. This
+is that answer, versioned and citable.
+
+Last verified: 2026-10-29.
 
 ## Files
-- `sms_pricing_by_country_2026.csv` — one row per route.
-- `sms_pricing_by_country_2026.json` — same data + documented schema.
-- `CHANGELOG.md` / `VERSION` — monthly refresh cadence.
+
+| File | Contents |
+|---|---|
+| `sms_pricing_by_country_2026.csv` | one row per route |
+| `sms_pricing_by_country_2026.json` | same data with a documented schema |
+| `CHANGELOG.md` | monthly refresh notes |
+| `VERSION` | dataset version |
 
 ## Schema
-| column | meaning |
+
+| Column | Meaning |
 |---|---|
-| country, iso2 | destination |
-| price_usd_per_sms | published route rate, USD per SMS |
-| route_type | direct · premium · wholesale |
-| carriers | terminating carriers on the route |
-| indicative_* | operator telemetry — **indicative**, not independently audited |
+| `country` | destination country name |
+| `iso2` | ISO 3166-1 alpha-2 |
+| `price_usd` | price for one one-part (GSM-7, 160 char) message, USD |
+| `currency_local` | local currency code |
+| `operator_count` | number of connected operators on that route |
+| `verified_on` | date this row was checked |
 
-## Coverage & honesty
-40 routes this release (price range $0.0080–$0.085/SMS),
-expanding monthly toward full coverage. Pricing figures are published route rates; the
-`indicative_*` latency/success columns are operator telemetry and are labeled as indicative, not
-third-party-audited — so cite the pricing with confidence and the telemetry as directional.
+## Coverage
 
-## Citation
-> smsroute.cc, *Global SMS Pricing Dataset 2026.07*, CC-BY-4.0, https://sendsmsnokyc.com
+The current release covers the routes below. Missing routes are missing because no verified price was
+available — they are not zero.
 
-## Publish targets (Fable #1): Kaggle · Hugging Face Datasets · data.world · canonical GitHub repo.
-Each links back to smsroute.cc as maintainer/source.
+## How to cite
+
+> SMSRoute, *Global SMS Pricing Dataset*, version 2026-10, https://github.com/SMSRoute-cc/sms-pricing-data
+
+## Caveats
+
+- Prices are one-part GSM-7. Unicode/UCS-2 messages bill per 70 characters, so a message with emoji can
+  cost 2–3× the listed price.
+- Taxes, sender-ID fees and volume discounts are excluded.
+- Prices change; every row carries the date it was verified.
+
+## Licence
+
+CC-BY-4.0 — reuse with attribution.
