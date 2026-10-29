@@ -1,7 +1,7 @@
 # Global SMS Pricing Dataset (2026.07)
 
 Open, machine-readable pricing for sending SMS across 40 international routes — the kind
-of data normally locked inside carrier contracts. Published by [smsroute.cc](https://smsroute.cc)
+of data normally locked inside carrier contracts. Published by [smsroute.cc](https://sendsmsnokyc.com)
 under CC-BY-4.0, refreshed monthly.
 
 **Why it exists:** "how much does it cost to send an SMS to <country>" has no honest open answer.
@@ -28,7 +28,7 @@ expanding monthly toward full coverage. Pricing figures are published route rate
 third-party-audited — so cite the pricing with confidence and the telemetry as directional.
 
 ## Citation
-> smsroute.cc, *Global SMS Pricing Dataset 2026.07*, CC-BY-4.0, https://smsroute.cc
+> smsroute.cc, *Global SMS Pricing Dataset 2026.07*, CC-BY-4.0, https://sendsmsnokyc.com
 
 ## Publish targets (Fable #1): Kaggle · Hugging Face Datasets · data.world · canonical GitHub repo.
 Each links back to smsroute.cc as maintainer/source.
